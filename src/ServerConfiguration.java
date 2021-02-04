@@ -17,6 +17,9 @@ public class ServerConfiguration extends JFrame{
         add(serverConfigPanel);
         setSize(500,250);
         setResizable(false);
+        ImageIcon icn = new ImageIcon("src/icons/serverConf.png");
+        setIconImage(icn.getImage());
+        setTitle("Remote File Content Display System");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 

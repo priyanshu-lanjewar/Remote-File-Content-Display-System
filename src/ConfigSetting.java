@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class ConfigSetting extends JFrame {
 
@@ -9,6 +10,9 @@ public class ConfigSetting extends JFrame {
     public ConfigSetting(){
         add(configSettingsPanel);
         setSize(700,150);
+        ImageIcon icn = new ImageIcon("src/icons/confSet.png");
+        setIconImage(icn.getImage());
+        setTitle("Remote File Content Display System");
         setResizable(false);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
