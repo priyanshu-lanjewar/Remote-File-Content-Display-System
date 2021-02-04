@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Server">
+  <grid id="27dc6" binding="mainpanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-12105414"/>
+      <font/>
+    </properties>
+    <border type="none" title="Remote File Content Display System" title-justification="2">
+      <font name="Open Sans Extrabold" size="18" style="1"/>
+      <title-color color="-4473925"/>
+    </border>
+    <children/>
+  </grid>
+</form>
