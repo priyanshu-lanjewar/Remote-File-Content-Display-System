@@ -8,6 +8,7 @@ public class ServerConfiguration extends JFrame{
     private JSpinner portNo;
     private JButton saveButton;
     private JButton cancelButton;
+    private JTextField address;
 
     JFileChooser chooser;
     String choosertitle;
@@ -51,16 +52,22 @@ public class ServerConfiguration extends JFrame{
                 JOptionPane.showMessageDialog(this,"Please Select Valid Location of Directory !","Error : Invalid Address",JOptionPane.ERROR_MESSAGE,null);
             } else {
                 ServerConfiguration.this.setVisible(false);
-                Server f = new Server(portNo.getValue().toString(), location);
+                Server f = new Server(address.getText(),portNo.getValue().toString(), location);
                 f.setVisible(true);
             }
         }));
     }
 
     private void createUIComponents() {
+        serverConfigPanel = new JPanel();
+
         SpinnerModel sm = new SpinnerNumberModel(8331,1000,9999,1);
        portNo = new JSpinner(sm);
+       address = new JTextField();
+       address.setHorizontalAlignment(JTextField.RIGHT);
+       location_txt = new JTextField();
 
+       clickToChooseLocationButton = new JButton();
     }
 }
 

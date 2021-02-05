@@ -1,13 +1,25 @@
 import javax.swing.*;
+import java.awt.*;
+import java.net.ServerSocket;
+import java.net.Socket;
 
 public class Server extends JFrame{
     private JPanel mainpanel;
-    String port="7575";
-    String location="";
+    private JTextField address;
+    private JTextField locationTxt;
+    private JButton startServerButton;
+    private JButton stopServerButton;
+    private JTextField status;
+    public static String addr = "127.0.0.1:";
+    public static String port="7575";
+    public static String location="defaultDirctory/textFiles";
+    public static Boolean isServerRunning = Boolean.FALSE;
+    public static ServerSocket ss;
+    public static Socket socket;
+    public static ServerThread serverThread;
 
     public Server(){
         add(mainpanel);
-
         setSize(500,450);
         setResizable(false);
         ImageIcon icn = new ImageIcon("src/icons/server.png");
@@ -15,17 +27,46 @@ public class Server extends JFrame{
         setIconImage(icn.getImage());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        locationTxt.setText(location);
+        address.setText(addr+port);
 
+        startServerButton.addActionListener(e -> {
+            isServerRunning=Boolean.TRUE;
+            startServerButton.setEnabled(Boolean.FALSE);
+            startServerButton.setText("Started..");
+            stopServerButton.setEnabled(Boolean.TRUE);
+            status.setDisabledTextColor(Color.BLUE);
+            status.setText("Status : Server is Running on port number  "+port);
+            serverThread = new ServerThread(port,isServerRunning,location);
+            serverThread.start();
+
+        });
+        stopServerButton.addActionListener(e -> {
+            try {
+                serverThread.interrupt();
+                isServerRunning = Boolean.FALSE;
+                startServerButton.setEnabled(Boolean.TRUE);
+                stopServerButton.setEnabled(Boolean.FALSE);
+                status.setText("Status : Server is Stopped");
+            } catch (Exception ioException) {
+                status.setText("Status : Error => "+ioException);
+            }
+        });
     }
-    public Server(String port,String location){
+
+
+
+    public Server(String addr,String port,String location){
         add(mainpanel);
         setSize(500,450);
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        this.port=port;
-        this.location=location;
-        System.out.println("\n"+port+"\n"+location);
+        Server.port =port;
+        Server.location =location;
+        Server.addr =addr;
+        locationTxt.setText(location);
+        address.setText(addr+port);
     }
 
     public static void main(String[] args) {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ServerConfiguration">
-  <grid id="27dc6" binding="serverConfigPanel" layout-manager="GridLayoutManager" row-count="8" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="serverConfigPanel" custom-create="true" layout-manager="GridLayoutManager" row-count="5" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="255"/>
+      <xy x="20" y="20" width="402" height="365"/>
     </constraints>
     <properties>
       <background color="-12828863"/>
@@ -17,34 +17,31 @@
     <children>
       <component id="83ff3" class="javax.swing.JLabel">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <foreground color="-327681"/>
           <text value="Server Storage Location : "/>
         </properties>
       </component>
-      <component id="f6efe" class="javax.swing.JTextField" binding="location_txt">
+      <component id="f6efe" class="javax.swing.JTextField" binding="location_txt" custom-create="true">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="1" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
+          <alignmentX value="0.5"/>
           <background color="-9934744"/>
           <editable value="true"/>
           <enabled value="false"/>
           <foreground color="-1"/>
+          <margin top="2" left="6" bottom="2" right="6"/>
         </properties>
       </component>
-      <vspacer id="61b7e">
+      <component id="f7ff5" class="javax.swing.JButton" binding="clickToChooseLocationButton" custom-create="true" default-binding="true">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
-      <component id="f7ff5" class="javax.swing.JButton" binding="clickToChooseLocationButton" default-binding="true">
-        <constraints>
-          <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-6052957"/>
@@ -52,44 +49,40 @@
           <text value="Click to choose location"/>
         </properties>
       </component>
-      <component id="33211" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="124" height="17"/>
-          </grid>
-        </constraints>
-        <properties>
-          <foreground color="-327681"/>
-          <text value="127.0.0.1 /"/>
-        </properties>
-      </component>
       <component id="3f576" class="javax.swing.JLabel">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <foreground color="-327681"/>
           <text value="Server Port"/>
         </properties>
       </component>
-      <vspacer id="62ff">
+      <component id="aa9d7" class="javax.swing.JSpinner" binding="portNo" custom-create="true">
         <constraints>
-          <grid row="5" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
-      <component id="b4329" class="javax.swing.JButton" binding="saveButton" default-binding="true">
-        <constraints>
-          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-15630063"/>
+          <background color="-6052957"/>
+          <foreground color="-16777216"/>
+        </properties>
+      </component>
+      <component id="f2a74" class="javax.swing.JTextField" binding="address" custom-create="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-9079435"/>
           <foreground color="-327681"/>
-          <text value=" Save "/>
+          <selectionColor color="-13670966"/>
+          <text value="127.0.0.1:"/>
         </properties>
       </component>
       <component id="38080" class="javax.swing.JButton" binding="cancelButton" default-binding="true">
         <constraints>
-          <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-5111808"/>
@@ -97,18 +90,14 @@
           <text value="Cancel"/>
         </properties>
       </component>
-      <vspacer id="44edf">
+      <component id="b4329" class="javax.swing.JButton" binding="saveButton" default-binding="true">
         <constraints>
-          <grid row="7" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
-      <component id="aa9d7" class="javax.swing.JSpinner" binding="portNo" custom-create="true">
-        <constraints>
-          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-6052957"/>
-          <foreground color="-16777216"/>
+          <background color="-15630063"/>
+          <foreground color="-327681"/>
+          <text value=" Save "/>
         </properties>
       </component>
     </children>
