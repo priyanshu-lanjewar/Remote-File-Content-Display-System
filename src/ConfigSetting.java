@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 
 public class ConfigSetting extends JFrame {
 
@@ -17,7 +16,6 @@ public class ConfigSetting extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         continueWithDefaultsButton.addActionListener(e -> SwingUtilities.invokeLater(() -> {
-            Server server=new Server();
             Server f = new Server();
             ConfigSetting.this.setVisible(false);
             f.setVisible(true);

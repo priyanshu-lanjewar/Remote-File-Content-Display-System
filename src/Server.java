@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.net.ServerSocket;
-import java.net.Socket;
 
 public class Server extends JFrame{
     private JPanel mainpanel;
@@ -14,8 +12,6 @@ public class Server extends JFrame{
     public static String port="7575";
     public static String location="defaultDirctory/textFiles";
     public static Boolean isServerRunning = Boolean.FALSE;
-    public static ServerSocket ss;
-    public static Socket socket;
     public static ServerThread serverThread;
 
     public Server(){
