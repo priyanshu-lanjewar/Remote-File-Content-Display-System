@@ -1,0 +1,13 @@
+The Java FileWriter class is used to write character-oriented data to a file. 
+
+It is character-oriented class which is used for file handling in java.
+    
+It provides method to write string directly.
+    
+FileWriter class together with its write() method to write some text to the file.
+    
+After writing to the file, close it with the close() method.
+    
+    
+    end of file
+
