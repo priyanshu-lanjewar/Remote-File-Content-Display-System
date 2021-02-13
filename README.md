@@ -43,10 +43,19 @@ Finally, the client displays the file name with file content.</p>
 </ul>
 </ul>
   <h2>Snapshots</h2>
-  <li> Server Side App Launch -> Initial Window : Configurations <br>
+  <li> Server Side App -> Initial Window : Configurations <br><br>
     <table border=2><td><img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/ScreenShots/Configuration%20Que%20first%20Screen.png"/></td></table><br>
       <li> Server Side App -> Dashboard <br><br>
-   <centre> <table border=2><td><img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/ScreenShots/defaultConfServerBlank.png"/></td></table><br></centre>
-    
+   <table border=2><td><img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/ScreenShots/defaultConfServerBlank.png"/></td></table><br>
+    <li> Server Side App -> Configuration Settings Updater <br><br>
+   <table border=2><td><img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/ScreenShots/ChangeServerSetting.png"/></td></table><br>
+      <li> Client Side App -> Server IP/port Request Window <br><br>
+   <table border=2><td><img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/ScreenShots/ClientSideIpofServer.png"/></td></table><br>
+        <li> Client Side App -> Search File Window <br><br>
+   <table border=2><td><img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/ScreenShots/FileViewerDashboard.png"/></td></table><br>
+          <li> Client Side App -> File Uploader <br><br>
+   <table border=2><td><img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/ScreenShots/Uploader.png"/></td></table><br>
+            <li> Client Side App -> File Viewer <br><br>
+   <table border=2><td><img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/ScreenShots/fileF2Viewer.png"/></td></table><br>
 </body>
 </html>
