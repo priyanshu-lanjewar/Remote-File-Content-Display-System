@@ -1,3 +1,5 @@
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=priyanshu-lanjewar)](https://github.com/anuraghazra/github-readme-stats)
+
 <html>
 <body>
 <h1> Remote File Content Display System</h1><br><p>
