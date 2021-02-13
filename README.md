@@ -42,5 +42,7 @@ Finally, the client displays the file name with file content.</p>
 <li><a href="https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/src/ClientThread.java">ClientThread.java</a>
 </ul>
 </ul>
+  <h2>Snapshots</h2>
+  <img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/src/serverConf.png"/>
 </body>
 </html>
