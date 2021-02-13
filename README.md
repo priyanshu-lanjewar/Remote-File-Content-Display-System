@@ -44,6 +44,6 @@ Finally, the client displays the file name with file content.</p>
 </ul>
   <h2>Snapshots</h2>
   <li> Server Side App Launch -> Initial Window : Configurations <br>
-    <img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/ScreenShots/Configuration%20Que%20first%20Screen.png"/>
+    <table border=2><img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/ScreenShots/Configuration%20Que%20first%20Screen.png"/></table>
 </body>
 </html>
