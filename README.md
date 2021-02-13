@@ -43,6 +43,7 @@ Finally, the client displays the file name with file content.</p>
 </ul>
 </ul>
   <h2>Snapshots</h2>
-  <img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/src/serverConf.png"/>
+  <li> Server Side App Launch -> Initial Window : Configurations <br>
+    <img src = "https://github.com/priyanshu-lanjewar/Remote-File-Content-Display-System/blob/master/ScreenShots/Configuration%20Que%20first%20Screen.png"/>
 </body>
 </html>
