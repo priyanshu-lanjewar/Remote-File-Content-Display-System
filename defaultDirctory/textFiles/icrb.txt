@@ -1,0 +1,70 @@
+ISRO 2021 Computer Science  Syllabus – Computer H/W Digital Logic
+Logic Functions
+Minimization
+Design and Synthesis of Combinational and Sequential Circuits – Number Representation and Computer Arithmetic (Fixed and Floating point)
+
+
+ISRO 2021 Computer Science  Syllabus- Software Systems Data Structures
+Notion of Abstract Data Types
+Stack, Queue, List, Set, String, Tree, Binary search tree, Heap, Graph
+
+
+ISRO 2021 Computer Science  Syllabus- Computer Organization
+Machine Instructions and Addressing modes
+ALU and Data-path
+Hardwired and Microprogrammed control
+Memory Interface
+I/O Interface (Interrupt and DMA mode)
+Serial Communication interface
+Instruction Pipelining
+Cache, Main and Secondary storage
+
+
+ISRO 2021 Computer Science  Syllabus- Programming Methodology
+C Programming
+Program control (Iteration, Recursion, Functions)
+Scope, Binding, Parameter passing
+Elementary concepts of Object oriented, Functional and Logic Programming
+
+
+ISRO 2021 Computer Science  Syllabus- Algorithms for Problem Solving
+Tree and Graph Traversals
+Connected components
+Spanning Trees, Shortest Paths
+Hashing, Sorting, Searching
+Design Techniques (Greedy, Dynamic Programming, Divideand-Conquer)
+
+
+ISRO 2021 Computer Science  Syllabus- Compiler Design
+Lexical Analysis
+Parsing
+Syntax Directed Translation
+Runtime environment
+Code Generation
+Linking (Static and Dynamic)
+
+
+ISRO 2021 Computer Science  Syllabus- Operating Systems
+Classical Concepts (Concurrency, Synchronization, Deadlock)
+Processes, Threads and Interprocess communication
+CPU scheduling
+Memory Management
+File systems, I/O systems
+Protection and Security
+
+
+ISRO 2021 Computer Science  Syllabus- Databases
+Relational Model (ER-model, Relational algebra, Tuple calculus)
+Database Design (Integrity Constraints, Normal forms)
+Query languages (SQL)
+File Structures (Sequential files, Indexing, B+ trees)
+Transactions and Concurrency control
+
+
+ISRO 2021 Computer Science  Syllabus- Computer Networks
+ISO/OSI stack
+Sliding Window Protocol
+LAN Technologies (Ethernet, Token ring)
+TCP/UDP, IP
+Basic Concepts of Switches, Gateways and Routers
+

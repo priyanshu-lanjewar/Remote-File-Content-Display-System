@@ -1,3 +1,14 @@
+
+/*
+ * Author Of Code : Priyanshu Lanjewar
+ * Registration Number : 1941012603
+ * Branch / Sec / Sem : CSE - F - 3rd Sem
+ * Institute : Institute of Technical Education and Research
+ * University : Siksha O Anusandhana Deemed To Be University.
+ * Class Description :
+   Class Provides GUI to Configure server's port and Location.
+ */
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -18,7 +29,7 @@ public class ServerConfiguration extends JFrame{
         add(serverConfigPanel);
         setSize(500,250);
         setResizable(false);
-        ImageIcon icn = new ImageIcon("src/icons/serverConf.png");
+        ImageIcon icn = new ImageIcon(this.getClass().getResource("serverConf.png"));
         setIconImage(icn.getImage());
         setTitle("Remote File Content Display System");
         setLocationRelativeTo(null);
@@ -38,7 +49,7 @@ public class ServerConfiguration extends JFrame{
 
             }
             else {
-                location_txt.setText("Not Choosen Any Directory !!");
+                location_txt.setText("Not Chosen Any Directory !!");
                 location_txt.setDisabledTextColor(Color.RED);
             }
         });
@@ -48,7 +59,7 @@ public class ServerConfiguration extends JFrame{
             f.setVisible(true);
         }));
         saveButton.addActionListener(e -> SwingUtilities.invokeLater(() -> {
-            if(location==null || location_txt.toString().equals("Not Choosen Any Directory !!")){
+            if(location==null || location_txt.toString().equals("Not Chosen Any Directory !!")){
                 JOptionPane.showMessageDialog(this,"Please Select Valid Location of Directory !","Error : Invalid Address",JOptionPane.ERROR_MESSAGE,null);
             } else {
                 ServerConfiguration.this.setVisible(false);

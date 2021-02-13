@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="Remote File Content Display System:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Remote_File_Content_Display_System_jar</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/Remote_File_Content_Display_System_Server_jar</output-path>
     <root id="archive" name="Remote File Content Display System.jar">
       <element id="module-output" name="Remote File Content Display System" />
     </root>
